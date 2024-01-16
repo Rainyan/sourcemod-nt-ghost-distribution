@@ -45,7 +45,7 @@ sub     esi, eax                        ; modulo wrap
 Or, in pseudocode:
 `(prev_ghost_spawn_index + RandomInt(1,3)) % num_ghost_spawns`.
 
-This means that for ghost spawn *G*, and *n* amount of ghost spawns total, the next chosen ghost spawn will (excluding the modulo wrap) follow the pattern of:
+This means that for ghost spawn *G*, and *n* amount of contiguous ghost spawns total, the next chosen ghost spawn will (excluding the modulo wrap) follow the pattern of:
 ```
 random stride (1-3)          1     2     3  ← next ghost spawn guaranteed to be one of these 3
                         ┌────↓─────↓─────↓
