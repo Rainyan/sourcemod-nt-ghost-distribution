@@ -20,6 +20,9 @@ Also check out the [alternative plugin for controlled ghost spawn sequences](htt
   * This plugin ensured uniform distribution and nothing more.
     Soft's plugin implements a controlled bias of *n* same ghost spawns in a row, which can be used to
     play "sides" for the same ghost spawn point.
+* Should I use both plugins?
+  * The plugins won't interfere with each other, but if you wish to use Soft's plugin,
+    you don't need this plugin.
 
 ## Background
 In Neotokyo, the ghost spawn selection is implemented as:
