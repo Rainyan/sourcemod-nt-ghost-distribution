@@ -18,6 +18,19 @@ SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locatio
 ## Background
 In Neotokyo, the ghost spawn selection approximately follows the pattern:
 
+```asm
+push    3
+push    1
+call    edx                             ; get random int in 1-3 range
+mov     esi, eax
+add     esi, [edi+260h]                 ; add index of previous ghost spawn to the random index
+mov     eax, [edi+258h]                 ; number of ghost spawns
+cmp     esi, eax
+jl      short get_array_at_index_offset
+sub     esi, eax                        ; modulo wrap
+```
+
+Or, in pseudocode:
 `(prev_ghost_spawn_index + RandomInt(1,3)) % num_ghost_spawns`.
 
 This means that for ghost spawn *G*, and *n* amount of ghost spawns total, the next chosen ghost spawn will (excluding the modulo wrap) follow the pattern of:
