@@ -8,6 +8,7 @@ Generating the dataset:
 		- Reload the plugin if it doesn't auto-activate
 		- Wait until tests completion (progress shown in the server's console output)
 		- The generated dataset will be written in the server's "NeotokyoSource" root folder
+		- Move the dataset to this relative path's dataset folder.
 
 Generating the images:
 
