@@ -99,7 +99,7 @@ def main(n_ghostspawns):
 
 
 def get_datapoints(path, verbose=False):
-    """Read all the data points from the log file producer by the nt_probability_test.sp plugin."""
+    """Read all the data points from the log file producer by the "test_bias" plugin."""
     assert os.path.isfile(path), f"Not a path: {path}"
     with open(path, mode="r", encoding="utf-8") as f:
         lines = f.readlines()
