@@ -1,7 +1,8 @@
 # sourcemod-nt-ghost-distribution
 SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locations.
 
-Also check out the [alternative plugin for controlled ghost spawn sequences](https://github.com/softashell/nt-sourcemod-plugins/blob/master/scripting/nt_ghost_spawn_bias.sp).
+Also check out the [alternative plugin for controlled ghost spawn sequences](https://github.com/softashell/nt-sourcemod-plugins/blob/master/scripting/nt_ghost_spawn_bias.sp)!
+See the [FAQ](#faq) section for details on the differences between these two plugins.
 
 ## Build instructions
 * Compile the plugin in `addons/sourcemod/scripting`, and move the compiled .smx file to your server.
