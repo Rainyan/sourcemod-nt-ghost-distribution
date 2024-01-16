@@ -17,8 +17,8 @@ public Plugin myinfo = {
 
 public void OnPluginStart()
 {
-	GameData gd = LoadGameConfigFile("neotokyo/ghost_distribution");
-	if (!gd)
+	Handle gd = LoadGameConfigFile("neotokyo/ghost_distribution");
+	if (gd == INVALID_HANDLE)
 	{
 		SetFailState("Failed to load GameData");
 	}
@@ -32,7 +32,7 @@ public void OnPluginStart()
 		SetFailState("Failed to detour");
 	}
 	delete dd;
-	delete gd;
+	CloseHandle(gd);
 }
 
 MRESReturn GetGhostSpawnSpot(Address pThis, DHookReturn hReturn)
@@ -40,7 +40,7 @@ MRESReturn GetGhostSpawnSpot(Address pThis, DHookReturn hReturn)
 	int n_spawns = LoadFromAddress(pThis + view_as<Address>(0x258), NumberType_Int32);
 	int array_index = GetURandomInt() % n_spawns;
 	StoreToAddress(pThis + view_as<Address>(0x260), array_index, NumberType_Int32);
-	Address ghost_spawnpoints_array = LoadFromAddress(pThis + view_as<Address>(0x24C), NumberType_Int32);
+	Address ghost_spawnpoints_array = view_as<Address>(LoadFromAddress(pThis + view_as<Address>(0x24C), NumberType_Int32));
 	Address offset = view_as<Address>(array_index * 4); // nth pointer
 	hReturn.Value = LoadFromAddress(ghost_spawnpoints_array + offset, NumberType_Int32);
 	return MRES_Supercede;
