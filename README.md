@@ -1,11 +1,19 @@
 # sourcemod-nt-ghost-distribution
 SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locations.
 
-## TL;DR
+## Build instructions
 * Compile the plugin in `addons/sourcemod/scripting`, and move the compiled .smx file to your server.
 * Copy the `addons/sourcemod/gamedata/neotokyo/uniform_ghosts.txt` to your server.
 
 **If you're using SourceMod older than 1.11**, you also need a version of the [DHooks extension](https://forums.alliedmods.net/showpost.php?p=2588686) compatible with your SM version.
+
+## TL;DR/FAQ
+* What?
+  * Default NT ghost spawns are not uniformly random. This plugin fixes it.
+* Does this plugin eliminate streaks of unlucky ghost spawns?
+  * No. Just as with a coin flipping, streaks are possible.
+* The ghost spawned in the same location twice in a row!
+  * This is by design, all results are equally likely, including getting the same exact spawn twice.
 
 ## Background
 In Neotokyo, the ghost spawn selection approximately follows the pattern:
