@@ -16,7 +16,7 @@ SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locatio
   * This is intended–all results are equally likely, including getting the same exact spawn twice.
 
 ## Background
-In Neotokyo, the ghost spawn selection approximately follows the pattern:
+In Neotokyo, the ghost spawn selection is implemented as:
 
 ```asm
 push    3
