@@ -24,39 +24,41 @@ You could liken this to a dice that always rolled the previous roll plus 1, 2, o
 it is impossible for your next dice roll to be a 1, 2 or 6!
 With a uniformly distributed ("fair") dice, any previous rolls should not affect the current throw, and all 6 possible results should be equally likely.
 
-This bias can be visualized by simulating a large number of NT rounds, and recording the ghost spawn positions distribution
-(note the blue line indicating the true distribution skewing to the right as the number of possible ghost spawn points increases):
+This bias can be visualized by simulating a large number of NT rounds, and recording the ghost spawn positions distribution.
+A "favourable ghost spawn" in this instance is arbitrarily chosen as exactly half of the total spawn points, to demonstrate the effect of the bias.
+
+Note the recorded distribution (blue) skewing to the right, away from the expected distribution (red), as the number of ghost spawn points increases:
 
 <table>
 <tr>
   <td>
-    <p>2 ghosts</p>
+    <p>2 possible ghost spawn positions</p>
     <img alt="2 ghosts" src="https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/f5acb305-2c3c-4668-8255-69d3e76141af" />
   </td>
   <td>
-    <p>4 ghosts</p>
+    <p>4 possible ghost spawn positions</p>
     <img alt="4 ghosts" src="https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/d64fc500-213d-42e4-a94e-475854f25edc" />
   </td>
 </tr>
 <tr>
   <td>
-    <p>6 ghosts</p>
+    <p>6 possible ghost spawn positions</p>
     <img alt="6 ghosts" src="https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/60bf262e-8015-45fd-a1d0-c29f0bac26b0" />
   </td>
   <td>
-    <p>8 ghosts</p>
+    <p>8 possible ghost spawn positions</p>
     <img alt="8 ghosts" src="https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/48f53b86-2b0e-4701-9204-a8eb9f716b4f" />
   </td>
 </tr>
 <tr>
   <td>
-    <p>16 ghosts</p>
+    <p>16 possible ghost spawn positions</p>
     <img alt="16 ghosts" src="https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/1bf1bdf3-9edb-4dcc-a564-bcad19c873af" />
   </td>
 </tr>
 </table>
 
-This plugin patches the selection function to choose a uniformly random ghost spawnpoint (blue line overlaps the expected distribution in red):
+This plugin patches the selection function to choose uniformly from all possible locations - the blue line overlaps with the expected distribution in red:
 
 ![ghostspawn_sim_16_ghosts](https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/8fb3083d-033f-41d2-b63a-4c075a795629)
 
