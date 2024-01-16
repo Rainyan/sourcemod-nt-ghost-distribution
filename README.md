@@ -3,7 +3,7 @@ SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locatio
 
 ## Build instructions
 * Compile the plugin in `addons/sourcemod/scripting`, and move the compiled .smx file to your server.
-* Copy the file in `addons/sourcemod/gamedata/neotokyo` to your server.
+* Copy the file in `addons/sourcemod/gamedata/neotokyo` to your server (create the "neotokyo" folder in gamedata, if it doesn't exist).
 
 **If you're using SourceMod older than 1.11**, you also need a version of the [DHooks extension](https://forums.alliedmods.net/showpost.php?p=2588686) compatible with your SM version.
 
