@@ -4,10 +4,20 @@
 #pragma semicolon 1
 #pragma newdecls required
 
+#define PLUGIN_VERSION "0.1.0"
+
+
+public Plugin myinfo = {
+	name = "NT Ghost Distribution",
+	description = "Uniformly distribute ghost spawn positions",
+	author = "Rain",
+	version = PLUGIN_VERSION,
+	url = "https://github.com/Rainyan/sourcemod-nt-ghost-distribution"
+};
 
 public void OnPluginStart()
 {
-	GameData gd = LoadGameConfigFile("neotokyo/uniform_ghosts");
+	GameData gd = LoadGameConfigFile("neotokyo/ghost_distribution");
 	if (!gd)
 	{
 		SetFailState("Failed to load GameData");
