@@ -16,7 +16,7 @@ Also check out the [alternative plugin for controlled ghost spawn sequences](htt
   * No. Just as with coin flipping, streaks are possible.
 * The ghost spawned in the same location twice in a row!
   * This is intended–all results are equally likely, including getting the same exact spawn twice.
-* What's the diffence between this and the nt_ghost_spawn_bias plugin?
+* What's the diffence between this and the [*nt_ghost_spawn_bias*](https://github.com/softashell/nt-sourcemod-plugins/blob/master/scripting/nt_ghost_spawn_bias.sp) plugin?
   * This plugin ensured uniform distribution and nothing more.
     Soft's plugin implements a controlled bias of *n* same ghost spawns in a row, which can be used to
     play "sides" for the same ghost spawn point.
