@@ -5,6 +5,8 @@ SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locatio
 * Compile the plugin in `addons/sourcemod/scripting`, and move the compiled .smx file to your server.
 * Copy the `addons/sourcemod/gamedata/neotokyo/uniform_ghosts.txt` to your server.
 
+**If you're using SourceMod older than 1.11**, you also need a version of the [DHooks extension](https://forums.alliedmods.net/showpost.php?p=2588686) compatible with your SM version.
+
 ## Background
 Ghost spawns in NT approximately follow the pattern: `(prev_ghost_spawn_index + RandomInt(1,3)) % num_ghost_spawns`.
 
