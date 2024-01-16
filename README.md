@@ -23,8 +23,8 @@ In Neotokyo, the ghost spawn selection approximately follows the pattern:
 This means that for ghost spawn *G*, and *n* amount of ghost spawns total, the next chosen ghost spawn will (excluding the modulo wrap) follow the pattern of:
 ```
 random stride (1-3)          1     2     3  ← next ghost spawn guaranteed to be one of these 3
-                      ┌──────↓─────↓─────↓
-spawn index           | G   G+1   G+2   G+3   G+4   G+5   (...)   Gₙ |
+                        ┌────↓─────↓─────↓
+spawn index             G   G+1   G+2   G+3   G+4   G+5   (...)   Gₙ |
 ```
 
 While the PRNG used is uniform, limiting the random output to a stride of 1-3 means the overall spawn frequency is not.
