@@ -8,7 +8,9 @@ SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locatio
 **If you're using SourceMod older than 1.11**, you also need a version of the [DHooks extension](https://forums.alliedmods.net/showpost.php?p=2588686) compatible with your SM version.
 
 ## Background
-Ghost spawns in NT approximately follow the pattern: `(prev_ghost_spawn_index + RandomInt(1,3)) % num_ghost_spawns`.
+In Neotokyo, the ghost spawn selection approximately follows the pattern:
+
+`(prev_ghost_spawn_index + RandomInt(1,3)) % num_ghost_spawns`.
 
 This means that for ghost spawn *G*, and *n* amount of ghost spawns total, the next chosen ghost spawn will always follow the pattern of:
 ```
