@@ -13,6 +13,7 @@ Generating the dataset:
 Generating the images:
 
 ```
+# Python 3 or compatible required.
 pip install -U pipenv
 pipenv install .
 pipenv run pip install -r requirements
