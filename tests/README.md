@@ -12,7 +12,7 @@ Generating the dataset:
 
 Generating the images:
 
-```
+```bash
 # Python 3 or compatible required.
 pip install -U pipenv
 pipenv install .
