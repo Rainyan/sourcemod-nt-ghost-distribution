@@ -32,7 +32,7 @@ You could liken this to a dice that always rolled the previous roll plus 1, 2, o
 it is impossible for your next dice roll to be a 1, 2 or 6!
 With a uniformly distributed ("fair") dice, any previous rolls should not affect the current throw, and all 6 possible results should be equally likely.
 
-This bias can be visualized by simulating a large number of NT rounds, and recording the ghost spawn positions distribution.
+This bias can be visualized by simulating a large number of NT rounds, and recording the ghost spawn positions' distribution.
 A "favourable ghost spawn" in this instance is arbitrarily chosen as exactly half of the total spawn points, to demonstrate the effect of the bias.
 
 Note the recorded distribution (blue) skewing to the right, away from the expected distribution (red), as the number of ghost spawn points increases:
