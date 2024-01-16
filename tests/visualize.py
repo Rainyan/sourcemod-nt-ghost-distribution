@@ -6,8 +6,6 @@ import matplotlib.ticker as ticker
 from matplotlib.transforms import Bbox
 import numpy as np
 
-# import pandas as pd
-# import scipy.stats as stats
 import os
 
 
