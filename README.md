@@ -20,8 +20,9 @@ spawn index           | G   G+1   G+2   G+3   G+4   G+5   (...)   G+n |
 ```
 
 While the PRNG used is uniform, limiting the random output to a stride of 1-3 means the overall spawn frequency is not.
-You could liken this to a dice that always rolled the previous roll plus 1, 2, or 3; if you just rolled a two, you know the next throw must result in either 2+1, 2+2, or 2+3.
-With a uniformly distributed ("fair") dice, any previous rolls should not affect the next one.
+You could liken this to a dice that always rolled the previous roll plus 1, 2, or 3; if you just rolled a two, you know the next throw must result in either 2+1 (3), 2+2 (4), or 2+3 (5);
+it is impossible for your next dice roll to be a 1, 2 or 6!
+With a uniformly distributed ("fair") dice, any previous rolls should not affect the current throw.
 
 This bias can be visualized by simulating a large number of NT rounds, and recording the ghost spawn positions distribution
 (note the blue line indicating the true distribution skewing to the right as the number of possible ghost spawn points increases):
