@@ -13,7 +13,7 @@ SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locatio
 * Does this plugin eliminate streaks of unlucky ghost spawns?
   * No. Just as with a coin flipping, streaks are possible.
 * The ghost spawned in the same location twice in a row!
-  * This is by design, all results are equally likely, including getting the same exact spawn twice.
+  * This is intended–all results are equally likely, including getting the same exact spawn twice.
 
 ## Background
 In Neotokyo, the ghost spawn selection approximately follows the pattern:
@@ -66,7 +66,7 @@ Note the recorded distribution (blue) skewing to the right, away from the expect
 </tr>
 </table>
 
-This plugin patches the selection function to choose uniformly from all possible locations - the blue line overlaps with the expected distribution in red:
+This plugin patches the selection function to choose uniformly from all possible locations–the blue line overlaps with the expected distribution in red:
 
 ![ghostspawn_sim_16_ghosts](https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/8fb3083d-033f-41d2-b63a-4c075a795629)
 
