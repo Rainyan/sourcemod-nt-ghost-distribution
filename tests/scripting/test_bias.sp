@@ -182,7 +182,7 @@ void LogGhostSpawnPosition(int index)
 		PrintToServer("- Stats:");
 		for (int i = 0; i < sizeof(spawn_count); ++i)
 		{
-			PrintToServer("  - Spawn %d: %d (%f %%)", i, spawn_count[i], spawn_count[i] / total);
+			PrintToServer("  - Spawn %d: %d (%f %%)", i, spawn_count[i], float(spawn_count[i]) / total);
 		}
 		PrintToServer("- Done; unloading the test plugin now.");
 		ServerCommand("sm plugins unload %s", pluginname);
