@@ -11,7 +11,7 @@ SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locatio
 * What?
   * Default NT ghost spawns are not evenly random. This plugin fixes it.
 * Does this plugin eliminate streaks of unlucky ghost spawns?
-  * No. Just as with a coin flipping, streaks are possible.
+  * No. Just as with coin flipping, streaks are possible.
 * The ghost spawned in the same location twice in a row!
   * This is intended–all results are equally likely, including getting the same exact spawn twice.
 
