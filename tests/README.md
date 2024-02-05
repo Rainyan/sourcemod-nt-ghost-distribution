@@ -1,4 +1,4 @@
-Generating the dataset:
+## Generating the dataset
 
 		- Compile the VMFs from mapsrc & place the corresponding BSP files in the server's maps folder
 		- Changelevel to one of the BSPs you want to test
@@ -10,7 +10,9 @@ Generating the dataset:
 		- The generated dataset will be written in the server's "NeotokyoSource" root folder
 		- Move the dataset to this relative path's dataset folder.
 
-Generating the images:
+![test_bias](https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/cd120483-a251-415a-a99a-c35cf6391cc0)
+
+## Generating the images
 
 ```bash
 # Python 3 or compatible required.
