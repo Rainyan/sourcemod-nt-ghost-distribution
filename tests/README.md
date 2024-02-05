@@ -1,5 +1,10 @@
 ## Generating the dataset
 
+### Prerequisites
+- [Hammer/SDK setup for Neotokyo](https://steamcommunity.com/sharedfiles/filedetails/?id=282059949)
+- [SRCDS setup for Neotokyo](https://steamcommunity.com/sharedfiles/filedetails/?id=281433778), together with [SourceMod](https://github.com/alliedmodders/sourcemod/) installation
+
+### Steps
 - Compile the VMFs from `mapsrc` & place the corresponding BSP files in the server's maps folder
 - Changelevel to one of the BSPs you want to test
 - Add 2 bots to the server with `bot_add` (requires `sv_cheats 1`), so the ghost will spawn
