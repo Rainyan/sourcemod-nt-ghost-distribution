@@ -1,5 +1,5 @@
 # sourcemod-nt-ghost-distribution
-SourceMod plugin for Neotokyo that uniformly distributes the ghost spawn locations.
+SourceMod plugin for Neotokyo that distributes the ghost spawn locations uniformly and independently.
 
 Also check out the [alternative plugin for controlled ghost spawn sequences](https://github.com/softashell/nt-sourcemod-plugins/blob/master/scripting/nt_ghost_spawn_bias.sp)!
 See the [FAQ](#faq) section for details on the differences between these two plugins.
@@ -18,7 +18,7 @@ See the [FAQ](#faq) section for details on the differences between these two plu
 * The ghost spawned in the same location twice in a row!
   * This is intended–all results are equally likely, including getting the same exact spawn twice.
 * What's the diffence between this and the [*nt_ghost_spawn_bias*](https://github.com/softashell/nt-sourcemod-plugins/blob/master/scripting/nt_ghost_spawn_bias.sp) plugin?
-  * This plugin is focused on ensuring uniform distribution and nothing more.
+  * This plugin is focused on ensuring statistically independent, uniform distribution and nothing more.
     Soft's plugin implements a controlled bias of *n* same ghost spawns in a row, which can be used to
     play "sides" for the same ghost spawn point.
 * Should I use both plugins?
@@ -91,7 +91,7 @@ Note the recorded distribution (blue) skewing to the right, away from the expect
 </tr>
 </table>
 
-This plugin patches the selection function to choose uniformly from all possible locations–the blue line overlaps with the expected distribution in red:
+This plugin patches the selection function to be independent and identically distributed–the blue line overlaps with the expected distribution in red:
 
 ![ghostspawn_sim_16_ghosts](https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/8fb3083d-033f-41d2-b63a-4c075a795629)
 
