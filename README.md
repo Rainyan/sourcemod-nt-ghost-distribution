@@ -28,7 +28,7 @@ See the [FAQ](#faq) section for details on the differences between these two plu
 ## Background
 *(optional reading, in case you're curious about the details)*
 
-In Neotokyo, the ghost spawn selection is implemented as:
+In Neotokyo, the ghost spawn selection is implemented (in disassembly) as:
 
 ```asm
 push    3
