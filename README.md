@@ -33,7 +33,7 @@ In Neotokyo, the ghost spawn selection is implemented as:
 ```asm
 push    3
 push    1
-call    edx                             ; get random int in 1-3 range
+call    edx                             ; get random int in 1-3 range (inclusive)
 mov     esi, eax
 add     esi, [edi+260h]                 ; add index of previous ghost spawn to the random index
 mov     eax, [edi+258h]                 ; number of ghost spawns
