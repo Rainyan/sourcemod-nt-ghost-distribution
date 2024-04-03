@@ -12,7 +12,7 @@ See the [FAQ](#faq) section for details on the differences between these two plu
 
 ## FAQ
 * What?
-  * Default NT ghost spawns are not evenly random. This plugin fixes it.
+  * Default NT ghost spawns are not "[evenly random](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)". This plugin fixes it.
 * Does this plugin eliminate streaks of unlucky ghost spawns?
   * No. Just as with coin flipping, streaks are possible.
 * The ghost spawned in the same location twice in a row!
