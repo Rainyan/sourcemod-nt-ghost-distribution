@@ -55,7 +55,7 @@ spawn index             G   G+1   G+2   G+3   G+4   G+5   (...)   Gₙ |
 While the PRNG used is uniform, limiting the random output to a stride of 1-3 means the result is not independent.
 You could liken this to a dice that always rolled the previous roll plus 1, 2, or 3; if you just rolled a two, you know the next throw must result in either 2+1 (3), 2+2 (4), or 2+3 (5);
 it is impossible for your next dice roll to be a 1, 2 or 6!
-With an independent (and uniformly distributed) i.e. *"fair"* dice, any previous rolls should not affect the current roll, and all possible results should be equally likely.
+With an independent (and uniformly distributed) i.e. *"fair"* dice, [any previous rolls should not affect the current roll](https://en.wikipedia.org/wiki/Gambler%27s_fallacy), and all possible results should be equally likely.
 
 This bias can be visualized by simulating a large number of NT rounds, and recording the ghost spawn positions' distribution.
 A *"favourable ghost spawn"* in this instance is arbitrarily chosen as exactly half of the total spawn points, to demonstrate the effect of the bias.
