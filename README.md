@@ -91,7 +91,7 @@ Note the recorded distribution (blue) skewing to the right, away from the expect
 </tr>
 </table>
 
-This plugin patches the selection function to be independent and identically distributed–the blue line overlaps with the expected distribution in red:
+This plugin patches the selection function to be independent and identically (uniformly) distributed–the blue line overlaps with the expected distribution in red:
 
 ![ghostspawn_sim_16_ghosts](https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/8fb3083d-033f-41d2-b63a-4c075a795629)
 
