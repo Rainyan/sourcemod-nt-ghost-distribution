@@ -95,4 +95,4 @@ This plugin patches the selection function to be independent and identically (un
 
 ![ghostspawn_sim_16_ghosts](https://github.com/Rainyan/sourcemod-nt-ghost-distribution/assets/6595066/8fb3083d-033f-41d2-b63a-4c075a795629)
 
-If you want to verify the difference yourself, the simulation related stuff is also included in the repo, in the [tests](tests) folder.
+If you want to verify the difference yourself, the simulation related stuff is also included in the repo, in the [dataset-gen](dataset-gen) folder.
