@@ -1,0 +1,9 @@
+[project]
+name = "dataset-gen"
+version = "2.0.0"
+description = "Generates the dataset for testing NT ghost distribution behaviour."
+readme = "README.md"
+requires-python = ">=3.10,<=3.14"
+dependencies = [
+    "matplotlib>=3.10.7",
+]

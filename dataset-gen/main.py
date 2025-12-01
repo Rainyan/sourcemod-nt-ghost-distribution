@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-from matplotlib.transforms import Bbox
-import numpy as np
 
 import os
 
@@ -16,9 +13,11 @@ IMAGE_DPI = 100
 
 def main(n_ghostspawns):
     """Entry point."""
+    FOLDER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "dataset")
+    assert os.path.isdir(FOLDER), FOLDER
+
     PATH_DATA = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)),
-        "dataset",
+        FOLDER,
         f"test_probabilities_streak_{n_ghostspawns}ghost.txt",
     )
 
@@ -100,7 +99,7 @@ def main(n_ghostspawns):
 
 def get_datapoints(path, verbose=False):
     """Read all the data points from the log file producer by the "test_bias" plugin."""
-    assert os.path.isfile(path), f"Not a path: {path}"
+    assert os.path.isfile(path), path
     with open(path, mode="r", encoding="utf-8") as f:
         lines = f.readlines()
 
