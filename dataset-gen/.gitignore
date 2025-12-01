@@ -1,5 +1,6 @@
 # Map compile artifacts
 *.bsp
+*.log
 *.prt
 *.vmx
 
